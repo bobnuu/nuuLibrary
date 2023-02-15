@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nuuLibrary.adminMemberlist">
+   <children>
+      <HBox layoutX="-3.0" layoutY="363.0" prefHeight="238.0" prefWidth="908.0">
+         <children>
+            <TableView fx:id="userBookList" prefHeight="244.0" prefWidth="908.0">
+               <columns>
+                  <TableColumn fx:id="bookId" prefWidth="91.99999690055847" text="Member ID" />
+                  <TableColumn fx:id="bookTitle" prefWidth="350.3999481201172" text="Full Name" />
+                  <TableColumn fx:id="bookAuthor" prefWidth="241.60003662109375" text="Address" />
+                  <TableColumn minWidth="0.0" prefWidth="123.20001220703125" text="Passport Number" />
+                  <TableColumn prefWidth="102.4000244140625" text="Contact No" />
+               </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <VBox layoutY="27.0" prefHeight="306.0" prefWidth="574.0" spacing="10.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="559.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="88.0" text="Member ID">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="28.0" prefWidth="99.0" />
+                  <TextField fx:id="tf_username_member1" prefHeight="28.0" prefWidth="318.0">
+                     <padding>
+                        <Insets left="50.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="559.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="74.0" text="Full Name">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="28.0" prefWidth="111.0" />
+                  <TextField fx:id="tf_username_member" prefHeight="28.0" prefWidth="318.0">
+                     <padding>
+                        <Insets left="50.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="559.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="125.0" text="Address">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="28.0" prefWidth="65.0" />
+                  <TextField fx:id="member_phone" prefHeight="28.0" prefWidth="318.0">
+                     <padding>
+                        <Insets left="50.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="559.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="125.0" text="Passport Number">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="28.0" prefWidth="62.0" />
+                  <TextField fx:id="member_email" prefHeight="28.0" prefWidth="318.0">
+                     <padding>
+                        <Insets left="50.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="559.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="146.0" text="Contact No">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="28.0" prefWidth="40.0" />
+                  <TextField fx:id="tf_username_member" prefHeight="28.0" prefWidth="318.0">
+                     <padding>
+                        <Insets left="50.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="40.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="617.0" layoutY="151.0" prefHeight="103.0" prefWidth="200.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="317.0" style="-fx-background-color: #051d41;" text="Add Member" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="16.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="31.0" prefWidth="318.0" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="322.0" style="-fx-background-color: #051d41;" text="Delete Member" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="18.0" layoutY="7.0" prefHeight="50.0" prefWidth="146.0" text="Member List">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="655.0" layoutY="301.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="124.0" style="-fx-background-color: #051d41;" text="Back&lt;&lt;&lt;" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
