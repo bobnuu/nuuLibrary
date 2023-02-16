@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #3496c7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nuuLibrary.HelloController">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="358.0" style="-fx-background-color: #051d41;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="370.0" fitWidth="369.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Img/LOGO.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="85.0" layoutY="515.0" prefHeight="23.0" prefWidth="207.0" text="Copyright. All rights reserved" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="529.0" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="tf_password" layoutX="186.0" layoutY="300.0" prefHeight="35.0" prefWidth="220.0" promptText="Password" />
+            <ImageView fitHeight="113.0" fitWidth="144.0" layoutX="85.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Img/User.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tf_username" layoutX="186.0" layoutY="213.0" prefHeight="35.0" prefWidth="220.0" promptText="Username" />
+            <ImageView fitHeight="115.0" fitWidth="105.0" layoutX="91.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Img/Lock.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button_login" layoutX="220.0" layoutY="388.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="151.0" style="-fx-background-color: #051d41;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_admin" layoutX="208.0" layoutY="491.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="176.0" style="-fx-background-color: transparent;" text="Admin" textFill="#051d41">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="181.0" layoutY="103.0" text="MEMBER LOGIN">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
